@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('../img/fundo.jpg'); /* Caminho para a imagem de fundo */
+    background-size: 60%; /* A imagem cobre toda a área da página */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    display: flex; /* Define o body como um contêiner flex */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Faz com que o body ocupe a altura total da janela */
+    margin: 0; /* Remove margens padrão */
+    font-family: 'Roboto', sans-serif;
+}
+
+div#form_fundo {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white; /* Cor do texto */
+    text-align: center;
+    width: 300px; /* Definir largura fixa para o formulário */
+    border: 2px solid #dd820a; /* Borda mais fina de 2px com cor verde clara */
+    backdrop-filter: blur(5px); /* Ajuste o valor para aumentar ou diminuir o desfoque */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white; /* Cor do texto */
+}
+
+#form_frente form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%; /* O input agora ocupa toda a largura disponível */
+    max-width: 250px; /* Limitar a largura máxima */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco para os inputs */
+    color: #333; /* Cor do texto do input */
+}
+
+button {
+    background-color: #585661; /* Roxo mais claro para o botão */
+    color: #ffffff; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* O botão também ocupa toda a largura disponível */
+    max-width: 250px; /* Limitar a largura máxima */
+}
+
+button:hover {
+    background-color: #000000; /* Roxo Nubank ao passar o mouse */
+}
+
+/* Botão de Cadastre-se */
+#btn_register {
+    display: inline-block;
+    background-color: #dd820a; /* Cor verde para diferenciar do botão Entrar */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remover o sublinhado do link */
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#btn_register:hover {
+    background-color: #030303; /* Cor do botão de cadastro ao passar o mouse */
+}
+
+#forgot_password {
+    color: #3498db; /* Cor do link "Esqueci a senha" */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    transition: color 0.3s ease; /* Transição suave para mudança de cor */
+    border-bottom: 1px solid #3498db; /* Adiciona um traço embaixo */
+    padding-bottom: 1px; /* Espaço entre o texto e o traço */
+}
+
+#forgot_password:hover {
+    color: #2980b9; /* Cor do link ao passar o mouse */
+}
